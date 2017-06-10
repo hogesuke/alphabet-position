@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <div id="hero">
+    <span>アルファベットの位置しらべる君</span>
+  </div>
+  <div id="container">
+    <div id="form">
+      <label class="label">アルファベット</label>
+      <input type="text" class="input" [(ngModel)]="targets">
+    </div>
+    <div id="characters">
+      <span *ngFor="let ch of characters"
+            [class.active]="isActive(ch)"
+            class="char">
+        {{ ch }}
+      </span>
+    </div>
+  </div>
+</div>

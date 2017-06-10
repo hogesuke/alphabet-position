@@ -1,0 +1,29 @@
+#hero {
+  padding: 20px;
+  font-size: 30px;
+  background-color: #00b89c;
+  color: #fff;
+}
+
+#container {
+  padding: 20px;
+}
+
+#form {
+  margin-bottom: 40px;
+}
+
+#characters {
+  text-align: center;
+  color: rgba(74, 74, 74, 0.4);
+
+  .char {
+    text-align: center;
+    font-family: Monaco,courier,monospace;
+    font-size: 26px;
+    transition: color .3s ease;
+  }
+  .char.active {
+    color: #ff3860;
+  }
+}
